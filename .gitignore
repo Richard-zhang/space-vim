@@ -14,10 +14,10 @@ Thumbs.db
 .Trashes
 
 
-core/autoload/info.vim
-core/autoload/spacevim/info.vim
+# core/autoload/info.vim
+# core/autoload/spacevim/info.vim
 *.un~
-private/*
-!private/README.md
+# private/*
+# !private/README.md
 
 .xmark*

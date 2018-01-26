@@ -63,7 +63,8 @@ install_plugins() {
 
 generate_dot_spacevim() {
     if [ ! -f "$HOME/.spacevim" ]; then
-        cp "$HOME/.space-vim/init.spacevim" "$HOME/.spacevim"
+        # cp "$HOME/.space-vim/init.spacevim" "$HOME/.spacevim"
+        ln -sf "$HOME/.space-vim/init.spacevim" "$HOME/.spacevim"
 
         ret="$?"
         success "Successfully generated .spacevim in your home directory"
@@ -164,5 +165,8 @@ check_git
 sync_repo
 
 install
+
+git clone https://github.com/powerline/fonts.git ~/.fonts
+sh ~/.fonts/install.sh
 
 msg "\nThanks for installing \033[1;31m$app_name\033[0m. Enjoy!"

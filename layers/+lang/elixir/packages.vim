@@ -1,3 +1,3 @@
-MP 'elixir-lang/vim-elixir'
+MP 'elixir-editors/vim-elixir'
 
 MP 'slashmili/alchemist.vim'

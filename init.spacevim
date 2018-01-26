@@ -21,11 +21,34 @@ let g:spacevim_layers = [
 "   Layer 'airline'
 " endif
 
+function! Layers()
+  Layer 'emoji'
+  Layer 'goyo'
+
+  Layer 'html'
+  Layer 'c-c++'
+  Layer 'python'
+  Layer 'haskell'
+  Layer 'markdown'
+  Layer 'elixir'
+
+  Layer 'airline'
+
+  Layer 'chinese'
+
+  Layer 'text-align'
+  Layer 'programming'
+
+  Layer 'ycmd'
+  Layer 'syntax-checking'
+
+endfunction
+
 " Manage your own plugins, refer to vim-plug's instruction for more detials.
 function! UserInit()
 
   " Add plugin via Plug command.
-  Plug 'junegunn/seoul256.vim'
+  " Plug 'junegunn/seoul256.vim'
 
 endfunction
 
@@ -33,7 +56,7 @@ endfunction
 function! UserConfig()
 
   " If you have installed the powerline fonts and want to enable airline layer
-  " let g:airline_powerline_fonts=1
+  let g:airline_powerline_fonts=1
 
   " Use gui colors in terminal if available
   if has('termguicolors')
